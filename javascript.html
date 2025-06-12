@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScript - Blog</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>JavaScript</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="php.html">PHP</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        <li><a href="python.html">Python</a></li>
+        <li><a href="java.html">Java</a></li>
+        <li><a href="tabla comparativa.html">tabla comparativa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Interactividad con JavaScript</h2>
+    <p>
+      JavaScript es un lenguaje de programación que se utiliza para añadir interactividad a los sitios web. 
+      Permite manipular el contenido de una página de forma dinámica, responder a eventos del usuario, validar formularios, 
+      crear animaciones, consumir APIs y mucho más. Se ejecuta directamente en el navegador del usuario, lo que lo hace ideal 
+      para crear experiencias web rápidas y reactivas.
+    </p>
+
+    <h3>Ejemplo</h3>
+    <p>Haz clic en el botón para ver una alerta y cambiar el texto de abajo con JavaScript:</p>
+
+    <button onclick="mostrarMensaje()">Haz clic aquí</button>
+    <p id="mensaje"></p>
+
+    <script>
+      function mostrarMensaje() {
+        alert('¡Hola desde JavaScript!');
+        document.getElementById('mensaje').textContent = '¡El botón ha sido presionado!';
+      }
+    </script>
+  </main>
+
+  <footer>
+    <p>© 2025 Trabajo Colaborativo</p>
+  </footer>
+</body>
+</html>
